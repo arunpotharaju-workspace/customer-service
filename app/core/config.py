@@ -1,7 +1,6 @@
 from pydantic_settings import BaseSettings
 from typing import Optional
 
-
 class Settings(BaseSettings):
     # Application settings
     PROJECT_NAME: str = "Customer Service API"
@@ -19,8 +18,7 @@ class Settings(BaseSettings):
     LOG_LEVEL: str = "INFO"
 
     # Cors settings
-    BACKEND_CORS_ORIGINS: list[str] = ["http://localhost", "http://localhost:8080", "https://localhost",
-                                       "https://localhost:8080"]
+    BACKEND_CORS_ORIGINS: list[str] = ["http://localhost", "http://localhost:8080", "https://localhost", "https://localhost:8080"]
 
     # Security settings
     SECRET_KEY: str = "your-secret-key-here"  # In production, use a proper secret key
@@ -33,6 +31,5 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = True
-
 
 settings = Settings()

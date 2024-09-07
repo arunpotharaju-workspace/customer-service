@@ -9,3 +9,6 @@ opentelemetry-exporter-otlp
 prometheus-fastapi-instrumentator
 opentelemetry-instrumentation-sqlalchemy
 pytest
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
