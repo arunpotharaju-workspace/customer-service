@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from typing import List
 from sqlalchemy.orm import Session
 from app.models.pydantic_models import Customer, CustomerCreate, VersionedResponse
@@ -31,7 +31,11 @@ async def create_customer(
             raise HTTPException(status_code=500, detail="Error creating customer")
 
 @router.get("/customers", response_model=VersionedResponse[List[Customer]])
-async def get_all_customers(repo: CustomerRepository = Depends(get_repository)):
+async def get_all_customers(
+    skip: int = Query(0, ge=0),
+    limit: int = Query(100, ge=1),
+    repo: CustomerRepository = Depends(get_repository)
+):
     with tracer.start_as_current_span("get_all_customers"):
         logger.info("Fetching all customers", privacy_level="LOW")
         customers = repo.get_all()
