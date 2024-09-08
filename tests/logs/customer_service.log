@@ -1,0 +1,910 @@
+2024-09-07 19:52:10,967 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,053 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,071 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,087 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,103 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,107 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,122 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 401 Unauthorized"
+2024-09-07 19:52:11,140 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 19:52:12,156 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 19:52:14,164 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 19:52:18,171 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 19:52:26,178 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 19:52:42,186 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
+2024-09-07 19:56:29,408 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,417 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '23afd115-0311-41a4-bde4-0680fadf9a33'}
+2024-09-07 19:56:29,420 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,437 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,441 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f8b47c7f-4a77-4df8-a8d0-71054ec582bf'}
+2024-09-07 19:56:29,443 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,447 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'f8b47c7f-4a77-4df8-a8d0-71054ec582bf'}
+2024-09-07 19:56:29,453 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/f8b47c7f-4a77-4df8-a8d0-71054ec582bf "HTTP/1.1 200 OK"
+2024-09-07 19:56:29,466 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,470 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0daadb17-346a-4d2a-ad17-2d81b692c789'}
+2024-09-07 19:56:29,473 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,479 - root - INFO - Updating customer [Privacy: MEDIUM] {'customer_id': '0daadb17-346a-4d2a-ad17-2d81b692c789'}
+2024-09-07 19:56:29,485 - root - INFO - Customer updated successfully [Privacy: LOW] {'customer_id': '0daadb17-346a-4d2a-ad17-2d81b692c789'}
+2024-09-07 19:56:29,487 - httpx - INFO - HTTP Request: PUT http://testserver/api/v1/customers/0daadb17-346a-4d2a-ad17-2d81b692c789 "HTTP/1.1 200 OK"
+2024-09-07 19:56:29,501 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,505 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ae9d30d6-dabc-4954-b19b-ca16dc11824e'}
+2024-09-07 19:56:29,507 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,511 - root - INFO - Deleting customer [Privacy: MEDIUM] {'customer_id': 'ae9d30d6-dabc-4954-b19b-ca16dc11824e'}
+2024-09-07 19:56:29,514 - root - INFO - Customer deleted successfully [Privacy: LOW] {'customer_id': 'ae9d30d6-dabc-4954-b19b-ca16dc11824e'}
+2024-09-07 19:56:29,518 - httpx - INFO - HTTP Request: DELETE http://testserver/api/v1/customers/ae9d30d6-dabc-4954-b19b-ca16dc11824e "HTTP/1.1 200 OK"
+2024-09-07 19:56:29,521 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'ae9d30d6-dabc-4954-b19b-ca16dc11824e'}
+2024-09-07 19:56:29,522 - root - WARNING - Customer not found [Privacy: MEDIUM] {'customer_id': 'ae9d30d6-dabc-4954-b19b-ca16dc11824e'}
+2024-09-07 19:56:29,526 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/ae9d30d6-dabc-4954-b19b-ca16dc11824e "HTTP/1.1 404 Not Found"
+2024-09-07 19:56:29,540 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,544 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'fc988064-59b6-42cf-848e-db53aafc7fb0'}
+2024-09-07 19:56:29,546 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,550 - root - INFO - Fetching customer by email [Privacy: MEDIUM] {'email': '****@****'}
+2024-09-07 19:56:29,554 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 200 OK"
+2024-09-07 19:56:29,568 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,572 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'eb58a198-9040-4963-b0d5-4d3febdf8e86'}
+2024-09-07 19:56:29,574 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,581 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,585 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '92591ea1-34f8-47db-ab9c-8e6f442161b7'}
+2024-09-07 19:56:29,588 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,595 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,600 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bbc057f9-49e5-41b5-924d-43670134401a'}
+2024-09-07 19:56:29,602 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,609 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,612 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ee8d10c6-ea97-4a9c-8ef1-a7f1e87f56d8'}
+2024-09-07 19:56:29,615 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,622 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,626 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0c2b0ef3-01d4-4dfc-9102-ee7ffeb6e1f1'}
+2024-09-07 19:56:29,628 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,636 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,639 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1b39254a-2eaa-4dcd-8df5-161d4e86790c'}
+2024-09-07 19:56:29,641 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,649 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,652 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f6cb666c-95f6-45cb-ab21-f1aac9393525'}
+2024-09-07 19:56:29,654 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,660 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,665 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e96924a7-0413-4eec-a44f-732481c97fdd'}
+2024-09-07 19:56:29,667 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,673 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,676 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '332147b4-1192-44ac-8b88-15a12bf998d1'}
+2024-09-07 19:56:29,679 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,686 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,689 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0da9665d-a236-4705-a19d-bfac72d61735'}
+2024-09-07 19:56:29,691 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,699 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,702 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '216ab9c7-6b27-43a7-9a3b-418588d02f70'}
+2024-09-07 19:56:29,704 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,710 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,713 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '35e905ac-eae3-454d-ac34-3e6535d2252f'}
+2024-09-07 19:56:29,716 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,721 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,725 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0cdaada0-9280-4d66-b83b-8ae9b5ad1366'}
+2024-09-07 19:56:29,728 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,735 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,738 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '115e7c49-187d-46ab-9531-7f4368824bbb'}
+2024-09-07 19:56:29,740 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,747 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,751 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'eaa92532-af6f-486f-9ce0-eb2164a83787'}
+2024-09-07 19:56:29,753 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,759 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,762 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6efe1dda-b3ed-4206-aa07-a29f5841cedc'}
+2024-09-07 19:56:29,765 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,771 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,775 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '78fd1ffa-dc8d-4b1c-861f-a31845ac5f44'}
+2024-09-07 19:56:29,777 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,784 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,788 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1e66b30b-e0c9-407f-958d-b3c0dcd48e05'}
+2024-09-07 19:56:29,790 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,796 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,800 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '00db151a-13fb-4a04-afc2-86b7a858a4b6'}
+2024-09-07 19:56:29,802 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,808 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,812 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd945320b-cb96-4188-b6ae-0eaf1e19e2e5'}
+2024-09-07 19:56:29,814 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,820 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,823 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ea8d8409-b512-4642-843c-122672493ce1'}
+2024-09-07 19:56:29,825 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,833 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,836 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'eb43bfec-3f1d-4e2a-9cd2-f41aea1e17f4'}
+2024-09-07 19:56:29,838 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,844 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,849 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7e06df46-5411-4624-8b39-952f0132a1d3'}
+2024-09-07 19:56:29,851 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,857 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,861 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd1b69543-23a0-4a3e-9db6-5bbee8034043'}
+2024-09-07 19:56:29,863 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,870 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,873 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b8105ecc-a8a0-452c-b311-c9b746668ead'}
+2024-09-07 19:56:29,875 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,882 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,886 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3fe0c5b1-0a6d-4ede-8950-5c6ebf4728b6'}
+2024-09-07 19:56:29,888 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,894 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,899 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd262d7d7-7158-4a2e-9379-5caaee491282'}
+2024-09-07 19:56:29,901 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,907 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,953 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '311a689d-6bcc-4ef0-82a4-0e5b531730a2'}
+2024-09-07 19:56:29,956 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,962 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,966 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'deef96b2-a7e2-4709-ab3c-ad7a75ca5d74'}
+2024-09-07 19:56:29,968 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,974 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,976 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2ed032d7-15ad-4937-bc93-03b6b10e63ad'}
+2024-09-07 19:56:29,979 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,985 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:29,989 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bfb2f9cf-820f-4c20-af8c-81bcfd4046f4'}
+2024-09-07 19:56:29,991 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:29,997 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,001 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6b1edfb1-80e5-477e-8b2e-9e23fd7e13ff'}
+2024-09-07 19:56:30,003 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,009 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,013 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0ac4055c-f059-4774-839b-7ca805db1409'}
+2024-09-07 19:56:30,016 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,022 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,025 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '22d0e6c6-0f85-4523-9370-5c32657a0891'}
+2024-09-07 19:56:30,027 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,033 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,037 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7be3a9a7-6f3d-4d5b-8e59-f3819fbb0d05'}
+2024-09-07 19:56:30,039 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,045 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,049 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd4413c09-9252-4f8e-82a4-20a221205345'}
+2024-09-07 19:56:30,051 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,057 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,061 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '09896eda-28c3-4754-a4c7-b2404ddfe17f'}
+2024-09-07 19:56:30,063 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,069 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,072 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8dcc9105-3b28-4eb7-b444-3a108f041ade'}
+2024-09-07 19:56:30,074 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,080 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,083 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '27c30b33-a402-4e96-bf17-a1c51192c4ae'}
+2024-09-07 19:56:30,085 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,090 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,093 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b9db5095-a3dd-4e66-b262-2e9a69173e70'}
+2024-09-07 19:56:30,096 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,102 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,105 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5cecdf6a-3b1a-49e5-9da0-0c9a091c7c6c'}
+2024-09-07 19:56:30,108 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,113 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,117 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0df15533-27c2-479d-b52c-98adbcd67fb5'}
+2024-09-07 19:56:30,119 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,125 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,129 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '882621e4-3061-4c75-aa26-3b8abec357ef'}
+2024-09-07 19:56:30,131 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,138 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,141 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '193c6a2c-9734-418b-9cd1-e34ad57f7bac'}
+2024-09-07 19:56:30,143 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,149 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,154 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6d31af70-5e58-499f-a9cd-5decaa7e8d0b'}
+2024-09-07 19:56:30,156 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,162 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,165 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '63936495-72fd-43cf-9539-0766c97427d7'}
+2024-09-07 19:56:30,168 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,174 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,178 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '52a54e95-8712-4ada-89fa-7461006604e9'}
+2024-09-07 19:56:30,180 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,186 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,189 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd6b20e8a-06f5-4b9f-8024-e0c5c58c0302'}
+2024-09-07 19:56:30,191 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,197 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,200 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '12fe5b0a-8d10-4c78-916a-8c9b1c850977'}
+2024-09-07 19:56:30,202 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,208 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,211 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6b1d5d2e-3710-4ed5-a32a-8935b0cc6907'}
+2024-09-07 19:56:30,213 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,218 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,221 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'acd278a8-5a0e-4980-b7b2-870757b9a707'}
+2024-09-07 19:56:30,223 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,228 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,232 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '381405ae-af86-4090-8707-88cfeb2a4678'}
+2024-09-07 19:56:30,234 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,240 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,243 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b277333c-083a-401a-9b1a-92c66789266b'}
+2024-09-07 19:56:30,245 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,250 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,254 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7b39e460-4145-42bd-afcd-e79bb74ad49b'}
+2024-09-07 19:56:30,282 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,284 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 19:56:30,289 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,292 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5d2efb5f-837e-480a-8adf-0a6cae6e9a6f'}
+2024-09-07 19:56:30,294 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,300 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,303 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8e51e55b-935f-4a98-9998-5098fae926fc'}
+2024-09-07 19:56:30,306 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,312 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,316 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bdae211b-67e7-488f-a96c-f840b70f15d1'}
+2024-09-07 19:56:30,318 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,324 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,327 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3218a19c-0693-433f-a62f-ffc6d6dceeb2'}
+2024-09-07 19:56:30,329 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,336 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,339 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3d8c3e2a-916f-4d1a-b5bf-dd67d28b936c'}
+2024-09-07 19:56:30,341 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,347 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,350 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '349283cc-23f1-4f3a-a776-429ad59db307'}
+2024-09-07 19:56:30,352 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,358 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,362 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'cd37dcff-a4a7-4a28-b944-4e27f5e35253'}
+2024-09-07 19:56:30,364 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,370 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,373 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3da690f8-b2a5-4873-be4a-7c39df42b652'}
+2024-09-07 19:56:30,376 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,383 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,386 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4fa4909a-70f1-4509-b113-0f878b44e3f9'}
+2024-09-07 19:56:30,388 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,394 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,398 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4102b5a8-84d2-4d1a-9dd1-5902c91173d0'}
+2024-09-07 19:56:30,400 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,406 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,410 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ab17c99b-2865-4545-a019-3dfcaf13689b'}
+2024-09-07 19:56:30,412 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,418 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,421 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '992fc59d-e561-40f8-8098-435fe9f36b1a'}
+2024-09-07 19:56:30,424 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,430 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,434 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'edd5a82e-df63-4aca-9241-469299654b60'}
+2024-09-07 19:56:30,436 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,442 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,445 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8cab6180-5c75-433a-a6d2-599f3a011436'}
+2024-09-07 19:56:30,447 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,453 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,456 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '53d8aa33-571d-4c71-a338-3f8c48e88c2d'}
+2024-09-07 19:56:30,458 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,463 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,466 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '586db2a7-41d1-4f95-984e-bfd7ee889d5b'}
+2024-09-07 19:56:30,468 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,473 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,476 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'dbd853b5-3fc4-4c19-ad90-0d3771a18ce2'}
+2024-09-07 19:56:30,478 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,484 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,487 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2a5587af-378b-4ab6-aced-0749069dd90f'}
+2024-09-07 19:56:30,489 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,494 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,497 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4545f746-bcdb-4157-b992-5068b1e97f4c'}
+2024-09-07 19:56:30,499 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,505 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,508 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3955c94d-9031-4e42-be44-95e9c9262f98'}
+2024-09-07 19:56:30,511 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,517 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,521 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'daceb94b-a7b1-41c6-9817-0504b504c2b6'}
+2024-09-07 19:56:30,523 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,529 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,534 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0da94cef-4c84-47c9-bfb3-0bb8d9e79c23'}
+2024-09-07 19:56:30,536 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,542 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,545 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4e18fb02-02ec-454a-a998-b3ea660c4b32'}
+2024-09-07 19:56:30,548 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,554 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,558 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '95d8e86f-65b7-41e4-a831-2e5935465cb7'}
+2024-09-07 19:56:30,560 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,566 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,569 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9f1bdb67-cd12-49d2-8ca2-2b1a3717ee51'}
+2024-09-07 19:56:30,572 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,577 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,581 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '17764062-e505-472e-b946-b975753a92ee'}
+2024-09-07 19:56:30,583 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,588 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,592 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '499f65d0-5700-4626-9d95-3fabc0b1ea46'}
+2024-09-07 19:56:30,594 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,599 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,602 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7ed429ff-0dfa-4fd2-a18a-2e3688fbeb58'}
+2024-09-07 19:56:30,604 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,609 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,612 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '67c293a8-2b87-4daf-a846-094ce41ba1cc'}
+2024-09-07 19:56:30,614 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,620 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,623 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '00737e3f-243f-4a48-992a-4e46a7807c1d'}
+2024-09-07 19:56:30,625 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,631 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,634 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1919e0f9-ca64-4e0e-8c90-d1f607e5a646'}
+2024-09-07 19:56:30,636 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,642 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,645 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6d94b7f0-f3ca-4767-816c-1d4e1ffbbdd8'}
+2024-09-07 19:56:30,648 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,654 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,657 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '40c2d1be-74f8-40a6-82dd-6c85e259d28e'}
+2024-09-07 19:56:30,660 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,666 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,670 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b7e448ec-a427-44c1-8f18-ddb0ce92c54a'}
+2024-09-07 19:56:30,673 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,679 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,682 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd12ad6a5-4980-4669-b519-13e1f0ed39d0'}
+2024-09-07 19:56:30,685 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,691 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,695 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '80977df4-fd05-4fbc-a718-08cf7648a0a7'}
+2024-09-07 19:56:30,697 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,704 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,708 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6144adf6-f7bf-441e-832a-177e9a9919e1'}
+2024-09-07 19:56:30,710 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,718 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,722 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a3a6a9af-2a38-42d7-a44d-8a31972dc167'}
+2024-09-07 19:56:30,724 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,730 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,734 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '336a5ae4-0f89-4651-bbd5-61a1928a7339'}
+2024-09-07 19:56:30,737 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,744 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,748 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7a2f5462-c98a-42c0-a662-8b816fcacd34'}
+2024-09-07 19:56:30,750 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,757 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,763 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '92ed2d9e-a2df-495d-9007-297a7bba233b'}
+2024-09-07 19:56:30,765 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,772 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,777 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '70315ece-c19d-42a1-a347-34c6d299305b'}
+2024-09-07 19:56:30,779 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,786 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,790 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0cf223a1-04da-4738-804e-068c3ad2625e'}
+2024-09-07 19:56:30,792 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,799 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,803 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5a3e2166-2a83-4be1-aea1-de001ee8d3d2'}
+2024-09-07 19:56:30,805 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,811 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,815 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e9dcb12e-7c40-4605-af44-411b9b54306e'}
+2024-09-07 19:56:30,817 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,823 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:56:30,827 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b6239508-0841-4eed-b0e2-6290621b2be2'}
+2024-09-07 19:56:30,830 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:56:30,833 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-07 19:56:30,851 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers "HTTP/1.1 200 OK"
+2024-09-07 19:56:30,855 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'eb58a198-9040-4963-b0d5-4d3febdf8e86'}
+2024-09-07 19:56:30,858 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/eb58a198-9040-4963-b0d5-4d3febdf8e86 "HTTP/1.1 200 OK"
+2024-09-07 19:56:30,862 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '6b1d5d2e-3710-4ed5-a32a-8935b0cc6907'}
+2024-09-07 19:56:30,866 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/6b1d5d2e-3710-4ed5-a32a-8935b0cc6907 "HTTP/1.1 200 OK"
+2024-09-07 19:56:30,869 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'b6239508-0841-4eed-b0e2-6290621b2be2'}
+2024-09-07 19:56:30,872 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/b6239508-0841-4eed-b0e2-6290621b2be2 "HTTP/1.1 200 OK"
+2024-09-07 19:56:31,315 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 19:56:33,351 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 19:56:37,378 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 19:56:45,408 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 19:57:01,442 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
+2024-09-07 19:57:33,465 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 19:57:34,487 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 19:57:36,515 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 19:57:40,539 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 19:57:48,562 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 19:57:56,423 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,430 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd045acec-8c3e-4e31-91d0-befe1200cc11'}
+2024-09-07 19:57:56,434 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,465 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,469 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4e913814-7d42-4ebf-a2bb-1d612e1d9b3f'}
+2024-09-07 19:57:56,471 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,475 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '4e913814-7d42-4ebf-a2bb-1d612e1d9b3f'}
+2024-09-07 19:57:56,481 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/4e913814-7d42-4ebf-a2bb-1d612e1d9b3f "HTTP/1.1 200 OK"
+2024-09-07 19:57:56,494 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,498 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'dc5d11cf-97d5-4b45-970b-89720c6ad844'}
+2024-09-07 19:57:56,501 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,507 - root - INFO - Updating customer [Privacy: MEDIUM] {'customer_id': 'dc5d11cf-97d5-4b45-970b-89720c6ad844'}
+2024-09-07 19:57:56,512 - root - INFO - Customer updated successfully [Privacy: LOW] {'customer_id': 'dc5d11cf-97d5-4b45-970b-89720c6ad844'}
+2024-09-07 19:57:56,515 - httpx - INFO - HTTP Request: PUT http://testserver/api/v1/customers/dc5d11cf-97d5-4b45-970b-89720c6ad844 "HTTP/1.1 200 OK"
+2024-09-07 19:57:56,529 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,533 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'cbb83013-ba86-4607-a6a1-7473133b394a'}
+2024-09-07 19:57:56,536 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,539 - root - INFO - Deleting customer [Privacy: MEDIUM] {'customer_id': 'cbb83013-ba86-4607-a6a1-7473133b394a'}
+2024-09-07 19:57:56,543 - root - INFO - Customer deleted successfully [Privacy: LOW] {'customer_id': 'cbb83013-ba86-4607-a6a1-7473133b394a'}
+2024-09-07 19:57:56,545 - httpx - INFO - HTTP Request: DELETE http://testserver/api/v1/customers/cbb83013-ba86-4607-a6a1-7473133b394a "HTTP/1.1 200 OK"
+2024-09-07 19:57:56,549 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'cbb83013-ba86-4607-a6a1-7473133b394a'}
+2024-09-07 19:57:56,550 - root - WARNING - Customer not found [Privacy: MEDIUM] {'customer_id': 'cbb83013-ba86-4607-a6a1-7473133b394a'}
+2024-09-07 19:57:56,554 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/cbb83013-ba86-4607-a6a1-7473133b394a "HTTP/1.1 404 Not Found"
+2024-09-07 19:57:56,568 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,571 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a69d56cf-b625-4cea-b42b-0bae97fe104f'}
+2024-09-07 19:57:56,573 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,577 - root - INFO - Fetching customer by email [Privacy: MEDIUM] {'email': '****@****'}
+2024-09-07 19:57:56,581 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 200 OK"
+2024-09-07 19:57:56,594 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,597 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5e5635fd-8e6a-473d-a143-8949b207ca26'}
+2024-09-07 19:57:56,600 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,606 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,609 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9702028e-2c28-407f-8fb5-675bf2dcfcaa'}
+2024-09-07 19:57:56,612 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,619 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,622 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0fbc31ce-462a-4770-8404-7152abff7d3a'}
+2024-09-07 19:57:56,624 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,630 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,635 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '927332c8-0d10-4376-a314-c574d8e8a758'}
+2024-09-07 19:57:56,637 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,643 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,647 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '69f5622a-b99d-4f57-8354-552c40545ea6'}
+2024-09-07 19:57:56,649 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,655 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,659 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2ebc80d2-ada9-4415-8c90-d24412a3eaa7'}
+2024-09-07 19:57:56,661 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,668 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,671 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bab2fc6d-f4d2-44c7-975f-653370d141c7'}
+2024-09-07 19:57:56,673 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,679 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,683 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b22f1e7f-797f-46c5-aca6-8fe88541c367'}
+2024-09-07 19:57:56,686 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,692 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,695 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '94bf94d7-5d57-45aa-8d8b-2a5eb813ba51'}
+2024-09-07 19:57:56,697 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,704 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,708 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '857cd372-05df-4f2e-bd3e-cd2dbf1f3a1a'}
+2024-09-07 19:57:56,710 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,717 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,721 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd964d30d-23c9-430e-9ef7-ee68717525f3'}
+2024-09-07 19:57:56,723 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,729 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,732 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9c788772-662f-4100-85c3-23b5d4b55ad1'}
+2024-09-07 19:57:56,734 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,740 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,744 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f6379a08-e99d-45db-bd83-faba05fa9a8d'}
+2024-09-07 19:57:56,746 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,751 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,754 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '343e3dc8-837f-459a-8947-6ac834963775'}
+2024-09-07 19:57:56,756 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,761 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,764 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9cb70a20-bf55-4751-8bfc-d3418533702e'}
+2024-09-07 19:57:56,766 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,772 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,775 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e9f0cad1-49bc-47fd-b8df-24b3d59262a4'}
+2024-09-07 19:57:56,776 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,781 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,785 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '41d08ada-992d-48ed-89cc-00a7c929c3a6'}
+2024-09-07 19:57:56,787 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,793 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,796 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '71438b2b-8a7a-4921-a9a8-fec2b02bddd0'}
+2024-09-07 19:57:56,799 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,805 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,809 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7e8fc282-8b4f-4b02-9e62-0e65e0b1ed2b'}
+2024-09-07 19:57:56,811 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,818 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,821 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '231aa270-34b0-4b9b-845b-2cf47cf18c12'}
+2024-09-07 19:57:56,823 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,829 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,833 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e97e370c-ab2b-42aa-b108-f30d4e157b48'}
+2024-09-07 19:57:56,836 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,841 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,845 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'c66ef818-5fb1-4775-98c3-feb86ddf88a8'}
+2024-09-07 19:57:56,848 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,854 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,858 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3acf2cb5-254b-4e52-9a17-8425dc195542'}
+2024-09-07 19:57:56,860 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,866 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,869 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '180657aa-b3c6-4d76-a1c2-037d60283b79'}
+2024-09-07 19:57:56,871 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,877 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,879 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b5bf5c86-671f-4540-92ac-0ce7c28e1032'}
+2024-09-07 19:57:56,881 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,886 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,889 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f8d003fc-dbd9-4635-ab9d-da47219c7e6b'}
+2024-09-07 19:57:56,891 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,896 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,899 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7d764936-b7f6-4553-b091-df0051e11e95'}
+2024-09-07 19:57:56,901 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,906 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,909 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '00be5184-5e72-4d6a-8e4f-fe1a266843b3'}
+2024-09-07 19:57:56,911 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,916 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,919 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '478a6c9f-0787-469b-849d-8b9cce9a15e6'}
+2024-09-07 19:57:56,921 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,927 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,930 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '25e22ef2-7be0-4433-a6aa-a9858b011ead'}
+2024-09-07 19:57:56,932 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,939 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,942 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '150e6d45-85cc-462d-9ab0-27b5a5fd4401'}
+2024-09-07 19:57:56,944 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,951 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,954 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2eae7e89-e807-43a9-8b16-2f9bedffb033'}
+2024-09-07 19:57:56,956 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,962 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,965 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '67289f92-a849-475b-ad1d-1af99fb14ca7'}
+2024-09-07 19:57:56,968 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,975 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:56,978 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2b0956b7-bbf2-43a1-a2eb-24deb5cbdb44'}
+2024-09-07 19:57:56,980 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:56,987 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,034 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a8e0af26-3c43-4021-8f87-8ae88418f16c'}
+2024-09-07 19:57:57,037 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,044 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,047 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '842717a7-025e-4e80-856f-d8b1bc0d5079'}
+2024-09-07 19:57:57,049 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,056 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,060 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '48764ddd-463f-484b-a799-48d5a68b6265'}
+2024-09-07 19:57:57,062 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,068 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,073 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8e3801d6-8d0a-41db-bc98-527c6cbaec89'}
+2024-09-07 19:57:57,075 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,081 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,085 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '300f7f69-9b98-4c6e-a692-131de61da792'}
+2024-09-07 19:57:57,087 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,093 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,096 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f462cb2f-a758-4752-bff5-3fc8d60d0e75'}
+2024-09-07 19:57:57,098 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,105 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,109 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '536d1793-6a57-4bc6-98c9-1ed5375605b1'}
+2024-09-07 19:57:57,111 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,117 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,120 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '379a15b5-0a97-4911-9e96-e53c1941e874'}
+2024-09-07 19:57:57,122 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,129 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,132 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2f271de6-1bfe-4be6-ae16-66362f35bb81'}
+2024-09-07 19:57:57,134 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,140 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,144 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '604ad973-1732-48f8-9558-45e944d7de53'}
+2024-09-07 19:57:57,146 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,151 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,154 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '231fe0f1-2db6-43be-b5ef-734857810d2e'}
+2024-09-07 19:57:57,156 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,161 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,165 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b55dbd84-c6ce-41cc-bb95-aeabec94f7aa'}
+2024-09-07 19:57:57,168 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,173 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,176 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '692a283f-c6af-4ee6-b66f-56bb70e4fe05'}
+2024-09-07 19:57:57,178 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,184 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,188 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '710c4a09-4d6b-41fe-837d-63e6735bcb3f'}
+2024-09-07 19:57:57,190 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,196 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,199 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0709cab1-49c2-4793-8ab2-ab6e2bdfe145'}
+2024-09-07 19:57:57,202 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,208 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,211 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'cbfa35b0-8699-4786-a8b3-eca782685401'}
+2024-09-07 19:57:57,213 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,219 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,223 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b4d81855-ce0f-4170-a708-14ffe9671002'}
+2024-09-07 19:57:57,226 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,232 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,235 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a3719502-a226-4eb7-99ed-265464556e5f'}
+2024-09-07 19:57:57,237 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,244 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,247 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2f70d6ee-447a-41b8-b440-4b9fffc97ba9'}
+2024-09-07 19:57:57,249 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,255 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,258 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '12556b70-3d34-4cf3-ad0e-8c8d5bea06a1'}
+2024-09-07 19:57:57,285 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,287 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 19:57:57,291 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,293 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2d9af397-09d5-4109-a572-8680a02d8c9c'}
+2024-09-07 19:57:57,295 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,302 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,305 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0014dd77-7536-4931-8938-7c48decc7a91'}
+2024-09-07 19:57:57,307 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,312 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,315 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1af96f05-72fb-4000-a197-3e572a94e78e'}
+2024-09-07 19:57:57,317 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,323 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,327 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd2ad6e7b-9ced-4dd1-8c2d-b8346522ef2a'}
+2024-09-07 19:57:57,329 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,335 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,338 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ce943478-a983-4f2d-b505-4274c6187194'}
+2024-09-07 19:57:57,340 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,347 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,351 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0ea1c87f-f1aa-4918-b2c7-7586de83f01c'}
+2024-09-07 19:57:57,353 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,359 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,362 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '907a1221-9a9b-40cc-a15b-b802fad28060'}
+2024-09-07 19:57:57,365 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,371 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,375 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'de643ee6-3fde-47f9-8315-7c1be75429d7'}
+2024-09-07 19:57:57,377 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,383 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,386 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5737603e-b19a-4e92-85b3-0d39d6bc8f32'}
+2024-09-07 19:57:57,389 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,394 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,398 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bdee27b8-d642-45ce-b0d7-91775ed682ba'}
+2024-09-07 19:57:57,400 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,405 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,408 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e37a213e-20c8-4390-a0ea-16e6ed0ae707'}
+2024-09-07 19:57:57,410 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,416 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,420 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '49e9a0eb-18c7-4f08-ae25-8dd707c66df2'}
+2024-09-07 19:57:57,422 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,427 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,429 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'f0b04cfb-09eb-45f2-9ac4-4f83d9da6aa1'}
+2024-09-07 19:57:57,431 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,438 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,441 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'aa39d0cc-7953-4a2b-b12b-63ddfc71a17d'}
+2024-09-07 19:57:57,443 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,450 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,453 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9a9d4fb7-e1b5-4181-907c-1d69abe5295e'}
+2024-09-07 19:57:57,455 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,461 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,482 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8b6a4d40-c9f6-4347-af25-4baea9ff403a'}
+2024-09-07 19:57:57,484 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,490 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,494 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a1f841bf-bf06-4582-9075-01fe1500e893'}
+2024-09-07 19:57:57,496 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,502 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,505 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '50f51a68-8d58-4906-81ae-b85bc64d8eac'}
+2024-09-07 19:57:57,508 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,513 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,517 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e2aa699f-3b1d-40d1-9e23-1c164ef46842'}
+2024-09-07 19:57:57,519 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,524 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,527 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1bc1bf21-662c-4cb4-a32a-adf27301922d'}
+2024-09-07 19:57:57,529 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,534 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,538 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5cad9b42-eea4-4f60-832d-9e33dbeb4438'}
+2024-09-07 19:57:57,540 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,547 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,552 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8f5ac9d3-2f73-4e51-9ac0-2cdfa0835d30'}
+2024-09-07 19:57:57,554 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,560 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,563 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a18b98ae-d922-431b-aa86-3f0af83a0100'}
+2024-09-07 19:57:57,565 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,572 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,575 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'da6b7272-07c3-4467-bede-b1388d6e06df'}
+2024-09-07 19:57:57,577 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,584 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,587 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'bd8b5322-11ae-4528-9fe9-917ef09cdbc4'}
+2024-09-07 19:57:57,589 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,595 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,599 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '89c6bcb9-4e41-4db9-84ab-69d152864633'}
+2024-09-07 19:57:57,602 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,608 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,611 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5fd9d915-f948-4479-9361-b05171faf1fe'}
+2024-09-07 19:57:57,613 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,619 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,623 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '81eebd28-b2ed-4059-bc78-dc46e0225a39'}
+2024-09-07 19:57:57,626 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,631 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,635 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '1337b26c-cbda-468c-8ea4-b44d3100907a'}
+2024-09-07 19:57:57,638 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,645 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,650 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'ad550a47-cb1d-49c5-92a8-fc8dd40da6a7'}
+2024-09-07 19:57:57,652 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,658 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,662 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3570c249-d8fd-4bed-a2d3-db26cc9a5d0e'}
+2024-09-07 19:57:57,664 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,669 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,672 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6474f860-d911-4285-a626-1c9cfa7ef092'}
+2024-09-07 19:57:57,675 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,680 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,684 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'c4f37d9d-b64e-475e-b882-a80fd6f8f62f'}
+2024-09-07 19:57:57,686 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,692 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,695 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '471c4974-a5ed-46dd-b034-45a42ef16af1'}
+2024-09-07 19:57:57,698 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,704 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,708 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '243b0b5b-3640-449e-a321-72118b4cc4d9'}
+2024-09-07 19:57:57,710 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,716 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,719 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '7d92e912-df8a-49c0-a5ff-fec3f96354e0'}
+2024-09-07 19:57:57,721 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,728 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,731 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9a934916-2036-41e8-96db-c19850de848b'}
+2024-09-07 19:57:57,733 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,740 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,743 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd503537d-d037-4850-bfc6-1a128656c1f2'}
+2024-09-07 19:57:57,746 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,752 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,756 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b9a99bfe-6cf6-4632-b39f-bc6316a157cb'}
+2024-09-07 19:57:57,758 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,764 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,768 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a5c02106-4d33-49a3-9681-027c4220ce01'}
+2024-09-07 19:57:57,770 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,775 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,779 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0f2c7048-a2ed-427b-934b-f746705144b0'}
+2024-09-07 19:57:57,781 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,787 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,789 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'c3fb7879-4f5d-4805-a712-823948b5d9db'}
+2024-09-07 19:57:57,791 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,796 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,801 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b5eab055-d325-406e-b35d-8369a9df2082'}
+2024-09-07 19:57:57,803 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,808 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,811 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4f3af4fc-1c9c-4024-9cf4-f162dba20603'}
+2024-09-07 19:57:57,813 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,819 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,823 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3708b0ff-e8f6-4a00-92bd-d0bea7568e74'}
+2024-09-07 19:57:57,825 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,831 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 19:57:57,834 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd111e190-320c-44a0-8db6-4c904fdcde83'}
+2024-09-07 19:57:57,837 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 19:57:57,840 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-07 19:57:57,858 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers "HTTP/1.1 200 OK"
+2024-09-07 19:57:57,861 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '5e5635fd-8e6a-473d-a143-8949b207ca26'}
+2024-09-07 19:57:57,865 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/5e5635fd-8e6a-473d-a143-8949b207ca26 "HTTP/1.1 200 OK"
+2024-09-07 19:57:57,868 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'cbfa35b0-8699-4786-a8b3-eca782685401'}
+2024-09-07 19:57:57,871 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/cbfa35b0-8699-4786-a8b3-eca782685401 "HTTP/1.1 200 OK"
+2024-09-07 19:57:57,875 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'd111e190-320c-44a0-8db6-4c904fdcde83'}
+2024-09-07 19:57:57,878 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/d111e190-320c-44a0-8db6-4c904fdcde83 "HTTP/1.1 200 OK"
+2024-09-07 19:57:58,318 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 19:58:00,349 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 19:58:04,380 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 19:58:12,407 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 19:58:28,435 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
+2024-09-07 20:05:33,700 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,708 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0981123d-7865-4bc4-9025-70e3638a705b'}
+2024-09-07 20:05:33,711 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,724 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,728 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3ba20a18-a163-4d5c-a996-7fe077b9d2d0'}
+2024-09-07 20:05:33,730 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,735 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '3ba20a18-a163-4d5c-a996-7fe077b9d2d0'}
+2024-09-07 20:05:33,740 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/3ba20a18-a163-4d5c-a996-7fe077b9d2d0 "HTTP/1.1 200 OK"
+2024-09-07 20:05:33,753 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,757 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'a62ef937-c957-4d72-a9e2-ab1e16211ac5'}
+2024-09-07 20:05:33,759 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,766 - root - INFO - Updating customer [Privacy: MEDIUM] {'customer_id': 'a62ef937-c957-4d72-a9e2-ab1e16211ac5'}
+2024-09-07 20:05:33,771 - root - INFO - Customer updated successfully [Privacy: LOW] {'customer_id': 'a62ef937-c957-4d72-a9e2-ab1e16211ac5'}
+2024-09-07 20:05:33,773 - httpx - INFO - HTTP Request: PUT http://testserver/api/v1/customers/a62ef937-c957-4d72-a9e2-ab1e16211ac5 "HTTP/1.1 200 OK"
+2024-09-07 20:05:33,786 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,790 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8b133758-99aa-4f74-b820-e8dcae1202cb'}
+2024-09-07 20:05:33,792 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,795 - root - INFO - Deleting customer [Privacy: MEDIUM] {'customer_id': '8b133758-99aa-4f74-b820-e8dcae1202cb'}
+2024-09-07 20:05:33,799 - root - INFO - Customer deleted successfully [Privacy: LOW] {'customer_id': '8b133758-99aa-4f74-b820-e8dcae1202cb'}
+2024-09-07 20:05:33,802 - httpx - INFO - HTTP Request: DELETE http://testserver/api/v1/customers/8b133758-99aa-4f74-b820-e8dcae1202cb "HTTP/1.1 200 OK"
+2024-09-07 20:05:33,806 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '8b133758-99aa-4f74-b820-e8dcae1202cb'}
+2024-09-07 20:05:33,807 - root - WARNING - Customer not found [Privacy: MEDIUM] {'customer_id': '8b133758-99aa-4f74-b820-e8dcae1202cb'}
+2024-09-07 20:05:33,810 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/8b133758-99aa-4f74-b820-e8dcae1202cb "HTTP/1.1 404 Not Found"
+2024-09-07 20:05:33,823 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,827 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '20c6513f-acd2-477a-bea3-93381a452990'}
+2024-09-07 20:05:33,829 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,833 - root - INFO - Fetching customer by email [Privacy: MEDIUM] {'email': '****@****'}
+2024-09-07 20:05:33,837 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 200 OK"
+2024-09-07 20:05:33,851 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,855 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '90b23afb-7d4c-41b1-9c55-b47a420aa534'}
+2024-09-07 20:05:33,857 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,863 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,868 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8be2721e-5134-4335-8e36-1005f0713094'}
+2024-09-07 20:05:33,870 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,878 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,881 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '76990e3d-f4ca-43dd-844f-cfffcab18d92'}
+2024-09-07 20:05:33,884 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,890 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,894 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9b7d7a22-d675-4098-95d2-b1c92d21cee3'}
+2024-09-07 20:05:33,896 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,902 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,906 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '56c01652-59b5-4260-b6e4-3881a768ed86'}
+2024-09-07 20:05:33,909 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,914 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,919 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '01b15bf3-f609-4c98-83b8-c141a8f6e450'}
+2024-09-07 20:05:33,921 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,927 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,930 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '37cf583e-430e-49b8-98b0-04cdca32bd81'}
+2024-09-07 20:05:33,932 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,939 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,942 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '5158ecc5-7534-4d5c-bfe8-70e9448b3b49'}
+2024-09-07 20:05:33,944 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,951 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,955 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '6e427e67-7be8-4469-8c29-e08666791056'}
+2024-09-07 20:05:33,957 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:33,963 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:05:33,967 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0561b2b3-638a-4836-9ff4-90f2d5df736b'}
+2024-09-07 20:05:33,969 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:05:34,069 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 20:05:35,084 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 20:05:37,097 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 20:05:41,123 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 20:05:49,137 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 20:06:05,148 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
+2024-09-07 20:06:20,237 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,247 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '10d8f323-1596-4485-9513-5d436f73473b'}
+2024-09-07 20:06:20,250 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,264 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,268 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0f89082a-5b02-4116-a882-c16ae0b19a48'}
+2024-09-07 20:06:20,270 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,275 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '0f89082a-5b02-4116-a882-c16ae0b19a48'}
+2024-09-07 20:06:20,279 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/0f89082a-5b02-4116-a882-c16ae0b19a48 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,293 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,297 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '9c28f0c2-bbc6-4eb3-a345-01938bed0926'}
+2024-09-07 20:06:20,299 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,306 - root - INFO - Updating customer [Privacy: MEDIUM] {'customer_id': '9c28f0c2-bbc6-4eb3-a345-01938bed0926'}
+2024-09-07 20:06:20,311 - root - INFO - Customer updated successfully [Privacy: LOW] {'customer_id': '9c28f0c2-bbc6-4eb3-a345-01938bed0926'}
+2024-09-07 20:06:20,313 - httpx - INFO - HTTP Request: PUT http://testserver/api/v1/customers/9c28f0c2-bbc6-4eb3-a345-01938bed0926 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,327 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,330 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd76039c7-3d88-48d2-868e-1931abea7de0'}
+2024-09-07 20:06:20,332 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,336 - root - INFO - Deleting customer [Privacy: MEDIUM] {'customer_id': 'd76039c7-3d88-48d2-868e-1931abea7de0'}
+2024-09-07 20:06:20,340 - root - INFO - Customer deleted successfully [Privacy: LOW] {'customer_id': 'd76039c7-3d88-48d2-868e-1931abea7de0'}
+2024-09-07 20:06:20,343 - httpx - INFO - HTTP Request: DELETE http://testserver/api/v1/customers/d76039c7-3d88-48d2-868e-1931abea7de0 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,346 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'd76039c7-3d88-48d2-868e-1931abea7de0'}
+2024-09-07 20:06:20,347 - root - WARNING - Customer not found [Privacy: MEDIUM] {'customer_id': 'd76039c7-3d88-48d2-868e-1931abea7de0'}
+2024-09-07 20:06:20,351 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/d76039c7-3d88-48d2-868e-1931abea7de0 "HTTP/1.1 404 Not Found"
+2024-09-07 20:06:20,364 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,368 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'c0e6a407-df73-497a-8674-50334519ca2b'}
+2024-09-07 20:06:20,370 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,374 - root - INFO - Fetching customer by email [Privacy: MEDIUM] {'email': '****@****'}
+2024-09-07 20:06:20,378 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,391 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,394 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '44806155-dfb2-448a-9e9f-af3a82aedf91'}
+2024-09-07 20:06:20,397 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,403 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,407 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'baf0d264-0963-45ba-9027-53f9ee40d92c'}
+2024-09-07 20:06:20,410 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,417 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,421 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'e1cac420-a5cd-48f5-9dec-02c3dfe4eeff'}
+2024-09-07 20:06:20,423 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,430 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,434 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4afae5c3-1300-4fcb-90c3-50d638265cc8'}
+2024-09-07 20:06:20,436 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,443 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,447 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '70043dc5-e327-4f64-99cb-01ac8c1cc694'}
+2024-09-07 20:06:20,449 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,456 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,459 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '74778691-063a-4416-9d2d-baf99d6e0637'}
+2024-09-07 20:06:20,462 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,468 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,473 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '48ca275c-4cbe-4864-aaab-0c1c150c2b96'}
+2024-09-07 20:06:20,475 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,480 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,484 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '554b1b6f-cf03-4216-91ce-7a65c5bf0422'}
+2024-09-07 20:06:20,487 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,493 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,496 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '621b6d0b-952d-478d-8258-58a7b2fd39d9'}
+2024-09-07 20:06:20,499 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,506 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-07 20:06:20,509 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '3fda6a4d-19a7-4a59-9cc1-7a297988a789'}
+2024-09-07 20:06:20,511 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-07 20:06:20,514 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-07 20:06:20,520 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,524 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '44806155-dfb2-448a-9e9f-af3a82aedf91'}
+2024-09-07 20:06:20,527 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/44806155-dfb2-448a-9e9f-af3a82aedf91 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,530 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '70043dc5-e327-4f64-99cb-01ac8c1cc694'}
+2024-09-07 20:06:20,533 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/70043dc5-e327-4f64-99cb-01ac8c1cc694 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,537 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '3fda6a4d-19a7-4a59-9cc1-7a297988a789'}
+2024-09-07 20:06:20,540 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/3fda6a4d-19a7-4a59-9cc1-7a297988a789 "HTTP/1.1 200 OK"
+2024-09-07 20:06:20,559 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-07 20:06:21,577 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-07 20:06:23,592 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-07 20:06:27,606 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-07 20:06:35,624 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-07 20:06:51,635 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
+2024-09-08 07:44:27,553 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,562 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '4ac4d962-f8c5-4d09-a68b-81b23624bad6'}
+2024-09-08 07:44:27,565 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,581 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,585 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '69724109-3629-4bd2-861b-cf2e32215624'}
+2024-09-08 07:44:27,587 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,591 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '69724109-3629-4bd2-861b-cf2e32215624'}
+2024-09-08 07:44:27,598 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/69724109-3629-4bd2-861b-cf2e32215624 "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,612 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,615 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b2cfae9e-14c7-45bb-8d91-faed6c02b233'}
+2024-09-08 07:44:27,617 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,625 - root - INFO - Updating customer [Privacy: MEDIUM] {'customer_id': 'b2cfae9e-14c7-45bb-8d91-faed6c02b233'}
+2024-09-08 07:44:27,630 - root - INFO - Customer updated successfully [Privacy: LOW] {'customer_id': 'b2cfae9e-14c7-45bb-8d91-faed6c02b233'}
+2024-09-08 07:44:27,632 - httpx - INFO - HTTP Request: PUT http://testserver/api/v1/customers/b2cfae9e-14c7-45bb-8d91-faed6c02b233 "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,646 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,650 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8'}
+2024-09-08 07:44:27,652 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,656 - root - INFO - Deleting customer [Privacy: MEDIUM] {'customer_id': '0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8'}
+2024-09-08 07:44:27,660 - root - INFO - Customer deleted successfully [Privacy: LOW] {'customer_id': '0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8'}
+2024-09-08 07:44:27,663 - httpx - INFO - HTTP Request: DELETE http://testserver/api/v1/customers/0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8 "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,667 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8'}
+2024-09-08 07:44:27,668 - root - WARNING - Customer not found [Privacy: MEDIUM] {'customer_id': '0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8'}
+2024-09-08 07:44:27,673 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/0e3a927c-9f69-4cf1-8ffd-83ca2e52ddb8 "HTTP/1.1 404 Not Found"
+2024-09-08 07:44:27,688 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,692 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '864f37d4-af14-4e18-ba46-f083642a8934'}
+2024-09-08 07:44:27,694 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,698 - root - INFO - Fetching customer by email [Privacy: MEDIUM] {'email': '****@****'}
+2024-09-08 07:44:27,702 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/email/james.doe@example.com "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,718 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,722 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'cd794d4d-5849-40a4-819e-9b203b0a2d00'}
+2024-09-08 07:44:27,724 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,732 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,736 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd39a9e79-8804-423f-8efe-ca4d4e1d5768'}
+2024-09-08 07:44:27,740 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,753 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,759 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '373e144e-309c-409f-9214-9b5861c4d18a'}
+2024-09-08 07:44:27,763 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,774 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,779 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2b888515-4d36-413a-a01f-2fcf235e1496'}
+2024-09-08 07:44:27,783 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,791 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,794 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '99e22faf-89f0-49f3-a29d-d6c1a9ca0c37'}
+2024-09-08 07:44:27,797 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,803 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,806 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '8a384ae6-9d90-4d2a-9a59-ffa7dad231fb'}
+2024-09-08 07:44:27,809 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,816 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,819 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'd82a72da-f646-4bc9-be9b-24242e5b9143'}
+2024-09-08 07:44:27,822 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,828 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,832 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': '2aa0592c-c9f8-44c4-9c44-b34e457ec797'}
+2024-09-08 07:44:27,834 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,840 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,844 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'fec8702d-14ff-4c06-a0fb-2a493e848d4a'}
+2024-09-08 07:44:27,847 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,854 - root - INFO - Creating new customer [Privacy: MEDIUM] {}
+2024-09-08 07:44:27,857 - root - INFO - Customer created successfully [Privacy: LOW] {'customer_id': 'b7790b5f-073a-44ac-9e26-95a3c8fa0e2d'}
+2024-09-08 07:44:27,860 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/customers "HTTP/1.1 201 Created"
+2024-09-08 07:44:27,864 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-08 07:44:27,869 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,873 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'cd794d4d-5849-40a4-819e-9b203b0a2d00'}
+2024-09-08 07:44:27,876 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/cd794d4d-5849-40a4-819e-9b203b0a2d00 "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,881 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': '99e22faf-89f0-49f3-a29d-d6c1a9ca0c37'}
+2024-09-08 07:44:27,885 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/99e22faf-89f0-49f3-a29d-d6c1a9ca0c37 "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,888 - root - INFO - Fetching customer [Privacy: MEDIUM] {'customer_id': 'b7790b5f-073a-44ac-9e26-95a3c8fa0e2d'}
+2024-09-08 07:44:27,891 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/customers/b7790b5f-073a-44ac-9e26-95a3c8fa0e2d "HTTP/1.1 200 OK"
+2024-09-08 07:44:27,909 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1s.
+2024-09-08 07:44:28,948 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 2s.
+2024-09-08 07:44:30,962 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4s.
+2024-09-08 07:44:34,976 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 8s.
+2024-09-08 07:44:42,992 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
+2024-09-08 07:44:59,007 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.

@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.main import app
 from app.database import Base, get_db
-from app.repositories.customer_repository import CustomerRepository
+from app.core.auth import create_access_token
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
@@ -35,5 +35,6 @@ def client(db):
     del app.dependency_overrides[get_db]
 
 @pytest.fixture(scope="function")
-def customer_repository(db):
-    return CustomerRepository(db)
+def auth_headers():
+    access_token = create_access_token(data={"sub": "testuser"})
+    return {"Authorization": f"Bearer {access_token}"}

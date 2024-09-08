@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added pagination to get_all_customers functionality.">
-      <change afterPath="$PROJECT_DIR$/app/core/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/customer_service.log" afterDir="false" />
+    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added various functionalities w.r.t Authorization">
+      <change afterPath="$PROJECT_DIR$/gen.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htpasswd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-creds/htpasswd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-creds/registry-pass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-creds/registry-user.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registry-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/customer_service.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/logs/customer_service.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tls.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tls.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer_service.db" beforeDir="false" afterPath="$PROJECT_DIR$/customer_service.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/customer_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer_service.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api_customers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api_customers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +57,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2lhY0dM73XZkQDRxayu1f0bbBLy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,17 +68,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "no__helm",
-    "last_opened_file_path": "/Users/arunpotharaju/customer-service",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;no__helm&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/arunpotharaju/customer-service&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.run">
+}</component>
+  <component name="RunManager" selected="Python tests.pytest in test_repository_customers.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="customer-service" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +121,59 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_api_customers.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="customer-service" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_api_customers.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_models.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="customer-service" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_models.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_repository_customers.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="customer-service" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_repository_customers.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_repository_customers.py" />
+        <item itemvalue="Python tests.pytest in test_models.py" />
+        <item itemvalue="Python tests.pytest in test_api_customers.py" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.main" />
       </list>
@@ -142,13 +204,22 @@
       <option name="project" value="LOCAL" />
       <updated>1725676956162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added various functionalities w.r.t Authorization">
+      <option name="closed" value="true" />
+      <created>1725752960697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725752960697</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First push" />
     <MESSAGE value="Added pagination to get_all_customers functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pagination to get_all_customers functionality." />
+    <MESSAGE value="Added various functionalities w.r.t Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various functionalities w.r.t Authorization" />
   </component>
 </project>
