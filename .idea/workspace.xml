@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added various functionalities w.r.t Authorization">
-      <change afterPath="$PROJECT_DIR$/gen.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htpasswd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-creds/htpasswd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-creds/registry-pass.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-creds/registry-user.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-pvc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/customer_service.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/logs/customer_service.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tls.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tls.key" afterDir="false" />
+    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added various functionalities w.r.t Authorization and infrastructure as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/customer_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer_service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api_customers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api_customers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/registry-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725752960697</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added various functionalities w.r.t Authorization and infrastructure as well">
+      <option name="closed" value="true" />
+      <created>1725808629001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725808629001</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,6 +211,7 @@
     <MESSAGE value="First push" />
     <MESSAGE value="Added pagination to get_all_customers functionality." />
     <MESSAGE value="Added various functionalities w.r.t Authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various functionalities w.r.t Authorization" />
+    <MESSAGE value="Added various functionalities w.r.t Authorization and infrastructure as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various functionalities w.r.t Authorization and infrastructure as well" />
   </component>
 </project>
