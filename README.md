@@ -121,3 +121,4 @@ Forwarding from 127.0.0.1:8080 -> 8000
 ```bash
    http://127.0.0.1:8080/docs
 ```
+10. Use "test/test" for authentication
