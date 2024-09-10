@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: registry-pvc
-  namespace: container-registry
+  name: docker-registry-pv-claim
+  namespace: docker-registry
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 5Gi   # Change this to match the PV size

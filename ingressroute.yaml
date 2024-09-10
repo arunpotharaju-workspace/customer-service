@@ -1,0 +1,17 @@
+---
+kind: IngressRoute
+apiVersion: traefik.io/v1alpha1
+metadata:
+  name: docker-registry
+  namespace: docker-registry
+
+spec:
+  entryPoints:
+    - websecure
+
+  routes:
+    - match: Host(`registry.local`)
+      kind: Rule
+      services:
+        - name: docker-registry
+          port: 5000

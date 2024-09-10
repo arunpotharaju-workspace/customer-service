@@ -12,7 +12,7 @@ class Settings(BaseSettings):
 
     # OpenTelemetry settings
     OTEL_SERVICE_NAME: str = "customer-service"
-    OTEL_EXPORTER_OTLP_ENDPOINT: str = "http://localhost:4317"
+    OTEL_EXPORTER_OTLP_ENDPOINT: str = "http://my-otel-collector-opentelemetry-collector:4317"
 
     # Logging settings
     LOG_LEVEL: str = "INFO"
@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     BACKEND_CORS_ORIGINS: list[str] = ["http://localhost", "http://localhost:8080", "https://localhost", "https://localhost:8080"]
 
     # Security settings
-    SECRET_KEY: str = "your-secret-key-here"  # In production, use a proper secret key
+    SECRET_KEY: str = "your-secret-key-here"  # In production, we have to use an actual key
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
     # Optional: Cloud provider settings (for future use)

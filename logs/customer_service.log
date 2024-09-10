@@ -122,3 +122,77 @@
 2024-09-08 07:31:14,757 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 16s.
 2024-09-08 07:31:30,763 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 32s.
 2024-09-08 07:31:40,712 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
+2024-09-09 17:25:47,065 - root - INFO - Starting up Customer Service API [Privacy: LOW] {}
+2024-09-09 17:26:13,567 - root - INFO - Root endpoint accessed [Privacy: LOW] {}
+2024-09-09 17:26:17,354 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 17:26:18,360 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 17:26:20,366 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 17:26:24,371 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 17:26:32,376 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 17:26:48,381 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 17:27:20,385 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 17:27:21,387 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 17:27:23,392 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 17:27:27,398 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 17:27:35,403 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 17:27:51,410 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 17:33:45,690 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
+2024-09-09 17:36:12,109 - root - INFO - Starting up Customer Service API [Privacy: LOW] {}
+2024-09-09 17:36:57,261 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 17:36:58,264 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 17:37:00,269 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 17:37:04,276 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 17:37:05,184 - root - INFO - Login attempt [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 17:37:05,205 - root - INFO - Successful login [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 17:37:08,321 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-09 17:37:12,279 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 17:37:28,282 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 17:38:00,289 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 17:38:01,292 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 17:38:03,298 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 17:38:07,304 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 17:38:15,310 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 17:38:31,316 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 17:39:03,322 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 17:39:04,328 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 17:39:06,333 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 17:39:10,337 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 17:39:18,343 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 17:39:18,655 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
+2024-09-09 21:08:16,347 - root - INFO - Starting up Customer Service API [Privacy: LOW] {}
+2024-09-09 21:08:23,291 - root - INFO - Root endpoint accessed [Privacy: LOW] {}
+2024-09-09 21:08:26,521 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 21:08:27,526 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 21:08:29,531 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 21:08:33,536 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 21:08:35,978 - root - INFO - Login attempt [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 21:08:35,980 - root - INFO - Successful login [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 21:08:41,542 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 21:08:46,827 - root - INFO - Fetching all customers [Privacy: LOW] {}
+2024-09-09 21:08:57,545 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 21:09:29,547 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 21:09:30,552 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 21:09:32,554 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 21:09:36,561 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 21:09:44,566 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 21:10:00,571 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 21:17:58,568 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
+2024-09-09 21:18:03,062 - root - INFO - Starting up Customer Service API [Privacy: LOW] {}
+2024-09-09 21:18:06,318 - root - INFO - Root endpoint accessed [Privacy: LOW] {}
+2024-09-09 21:18:08,202 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 21:18:09,206 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 21:18:11,211 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 21:18:15,216 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 21:18:19,283 - root - INFO - Login attempt [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 21:18:19,285 - root - INFO - Successful login [Privacy: MEDIUM] {'username': 'test'}
+2024-09-09 21:18:23,221 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 21:18:39,225 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 21:19:11,230 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 1s.
+2024-09-09 21:19:12,235 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 2s.
+2024-09-09 21:19:14,240 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 4s.
+2024-09-09 21:19:18,245 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 8s.
+2024-09-09 21:19:26,251 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 16s.
+2024-09-09 21:19:42,256 - opentelemetry.exporter.otlp.proto.grpc.exporter - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to my-otel-collector-opentelemetry-collector:4317, retrying in 32s.
+2024-09-09 21:28:38,699 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
+2024-09-09 21:28:41,451 - root - INFO - Starting up Customer Service API [Privacy: LOW] {}
+2024-09-09 21:28:47,888 - root - INFO - Shutting down Customer Service API [Privacy: LOW] {}
