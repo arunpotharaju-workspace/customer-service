@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added various functionalities w.r.t Authorization and infrastructure as well">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/_helpers.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/hosts-configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/namespace.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/templates/serviceaccount.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helm/values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingressroute.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/otel-values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry-chart.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/customer-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customer-service.iml" afterDir="false" />
+    <list default="true" id="e58b1474-adae-47ac-963f-f8e2a960dda1" name="Changes" comment="Added OTEL deployment and made several other changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htpasswd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/customer_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/customer_service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-creds/htpasswd" beforeDir="false" afterPath="$PROJECT_DIR$/registry-creds/htpasswd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-creds/registry-pass.txt" beforeDir="false" afterPath="$PROJECT_DIR$/registry-creds/registry-pass.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-creds/registry-user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/registry-creds/registry-user.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-pvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/registry-pvc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/logs/customer_service.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/logs/customer_service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +29,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="no_helm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "no__helm",
+    "git-widget-placeholder": "final",
     "last_opened_file_path": "/Users/arunpotharaju/customer-service",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
@@ -237,8 +212,27 @@
       <option name="project" value="LOCAL" />
       <updated>1725809348438</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added OTEL deployment and made several other changes">
+      <option name="closed" value="true" />
+      <created>1725934564880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725934564880</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -246,6 +240,7 @@
     <MESSAGE value="Added pagination to get_all_customers functionality." />
     <MESSAGE value="Added various functionalities w.r.t Authorization" />
     <MESSAGE value="Added various functionalities w.r.t Authorization and infrastructure as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various functionalities w.r.t Authorization and infrastructure as well" />
+    <MESSAGE value="Added OTEL deployment and made several other changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added OTEL deployment and made several other changes" />
   </component>
 </project>
